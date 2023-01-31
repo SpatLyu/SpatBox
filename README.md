@@ -1,6 +1,6 @@
 # SpatBox
 
-### A Python Library For GeoSpatial Data Proressing！
+### A Python Library For GeoSpatial Data Proressing and Modeling！
 
 *Now it only consist of few tools, wo will maintain it and add the geospatial-propressing-tools!*
 
