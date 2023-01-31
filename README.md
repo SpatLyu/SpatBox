@@ -28,9 +28,9 @@ Then wo install the mamba package to get a rapid installation:
 
 ** The SpatBox Library depends on GDAL；Geopandas;rasterio.....** , all of the dependence are include in pysal's dependence,
 
-you can use `conda install -c conda-forge pysal` to get all of the spatbox dependence installed.
+you can use `mamba install -c conda-forge pysal` to get all of the spatbox dependence installed.
 
-(if you are in China, you can use `conda install pysal -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge`)
+(if you are in China, you can use `mamba install pysal -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge`)
 
 ### Finally, install SpatBox.
 
