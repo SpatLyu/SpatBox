@@ -84,20 +84,6 @@ def inverse_geocoding(lon,lat,key):
 
 
 
-def owner_keys():
-    input_name = input('输入作者姓名')
-    if input_name=='lyugeo':
-        keys = ['6b1f8243493efea896cc8e2858a4cf3f',
-                '0118c677c6d6e6fee5c8c8805bfed42b',
-                'a54db28bca2ac11479d6b480ea9bd224',
-                '365ac412d6e22f49ce3d345270ecc643',
-                '89ba99c69e8a728366484903c09083a1',
-                'b304f30dcba64471ca0e3d081fae04fb',]
-               
-        return keys
-    else: 
-        print('请自己申请')
-        
         
         
         
