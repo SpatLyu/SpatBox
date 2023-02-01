@@ -1,4 +1,4 @@
-README.rst
+README.md
 setup.py
 spatbox/__init__.py
 spatbox/corrdinate.py
@@ -9,9 +9,15 @@ spatbox.egg-info/dependency_links.txt
 spatbox.egg-info/not-zip-safe
 spatbox.egg-info/top_level.txt
 spatbox/datasets/__init__.py
-spatbox/downscale/__init__.py
-spatbox/downscale/gwann.py
-spatbox/downscale/srgcnn.py
+spatbox/datasets/china.zip
+spatbox/datasets/china_city_pcs.zip
+spatbox/datasets/lp.zip
+spatbox/datasets/mws.zip
+spatbox/datasets/nineline.zip
+spatbox/datasets/xian.zip
+spatbox/model/__init__.py
+spatbox/model/gwann.py
+spatbox/model/srgcnn.py
 spatbox/plot/__init__.py
 spatbox/plot/colormaps.py
 spatbox/raster/__init__.py
