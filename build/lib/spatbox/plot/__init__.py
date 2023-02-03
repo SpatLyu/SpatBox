@@ -1,3 +1,3 @@
 ### plot_geospatial_data
 
-import spatbox.plot.colormaps
+from . import colormaps

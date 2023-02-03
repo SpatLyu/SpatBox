@@ -1,15 +1,15 @@
-from osgeo import ogr
-from math import ceil
 import os 
-import geopandas as gpd 
 import numpy as np
 import pandas as pd 
+from osgeo import ogr
+from math import ceil
+import geopandas as gpd 
 from shapely.geometry import MultiPoint
 from shapely.ops import voronoi_diagram
 
 
 
-def create_Honeycomb_Polygon(vectorfile,outfile,gridwidth,gridheight):
+def Honeycomb_Polygon(vectorfile,outfile,gridwidth,gridheight):
     '''
         vectorfile   :    要创建蜂窝多边形的矢量文件，字符串类型
         outfile      :    导出创建的蜂窝多边形文件地址，字符串类型

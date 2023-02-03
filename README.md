@@ -6,7 +6,7 @@
 
 ## How to install spatbox in your own PC?
 
-**Wo recommend to use the conda to install SpatBox **
+**Wo recommend to use the conda to install SpatBox**
 
 ### First, install the anaconda / miniconda in your computer.
 
@@ -26,7 +26,7 @@ Then wo install the mamba package to get a rapid installation:
 
 (if you are in China, you can use `conda install mamba -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge`)
 
-** The SpatBox Library depends on GDAL；Geopandas;rasterio.....** , all of the dependence are include in pysal's dependence,
+**The SpatBox Library depends on GDAL；Geopandas;rasterio.....** , all of the dependence are include in pysal's dependence,
 
 you can use `mamba install -c conda-forge pysal` to get all of the spatbox dependence installed.
 
@@ -48,9 +48,9 @@ from spatbox.vector import grid
 import geopandas as gpd
 import matplotlib.pyplot as plt  
 
-lp = gpd.read_file(stx.datasets.get_path('lp'))
+lp = gpd.read_file(stx.utils.get_path('lp'))
 
-grid.Fishgrid(inputfile = stx.datasets.get_path('lp'), 
+grid.Fishgrid(inputfile = stx.utils.get_path('lp'), 
               outfile = 'test1',
               gridheight = 10000,
               gridwidth = 10000)
