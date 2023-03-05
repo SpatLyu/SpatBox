@@ -6,7 +6,7 @@
 
 ## How to install spatbox in your own PC?
 
-**Wo recommend to use the conda to install SpatBox**
+**We recommend to use the conda to install SpatBox**
 
 ### First, install the anaconda / miniconda in your computer.
 
