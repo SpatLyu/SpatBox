@@ -2,13 +2,13 @@
 
 ### A Python Library For GeoSpatial Data Proressing and Modeling！
 
-*Now it only consist of few tools, we will maintain it and add the geospatial-propressing-tools!*
+*Now it only consists of few tools, we will maintain it and add more geospatial-propressing-tools!*
 
 ## How to install spatbox in your own PC?
 
 **We recommend to use the conda to install SpatBox**
 
-### First, install the anaconda / miniconda in your computer.
+### First, install the anaconda / miniconda in your own computer.
 
 Go to [anaconda](https://www.anaconda.com/) or [miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) to 
 
