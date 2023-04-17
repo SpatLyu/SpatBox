@@ -20,7 +20,7 @@ Open the "Anaconda Prompt" and input the code `conda create -n spat-env python=3
 
 After that, activate the conda-env you have created, use `conda activate spat-env`, and you will get in the "spat-env" conda-env
 
-Then wo install the mamba package to get a rapid installation:
+Then we install the mamba package to get a rapid installation:
 
 `conda install -c conda-forge mamba` 
 
