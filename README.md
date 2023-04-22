@@ -58,7 +58,6 @@ lp_square = gpd.read_file('square')
 fig, ax = plt.subplots(1,1, figsize=(12,9))
 lp_square.plot(ax=ax, fc='w', ec='grey') 
 lp.plot(ax=ax, fc='none', ec='r')
-plt.savefig('./figure/square.png',dpi=600)
 ```
 
 <center><img src="./figure/square.png"/></center>
@@ -73,6 +72,5 @@ lp_honeycomb = gpd.read_file('honeycomb')
 fig, ax = plt.subplots(1,1, figsize=(12,9))
 lp_honeycomb.plot(ax=ax, fc='w', ec='grey') 
 lp.plot(ax=ax, fc='none', ec='r')
-plt.savefig('./figure/honeycomb.png',dpi=600)
 ```
 <center><img src="./figure/honeycomb.png"/></center>
