@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
     name = "spatbox",
-    version = "0.1.8",
+    version = "0.2.0",
     description = "A Python Library For GeoSpatial Data Proressing And Modeling",
     author = "SpatLyu",
     author_email = "3180929657@qq.com",

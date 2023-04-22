@@ -9,7 +9,7 @@ from shapely.ops import voronoi_diagram
 
 
 
-def Honeycomb_Polygon(vectorfile,outfile,gridwidth,gridheight):
+def Make_Honeycomb_Polygon(vectorfile,outfile,gridwidth,gridheight):
     '''
         vectorfile   :    要创建蜂窝多边形的矢量文件，字符串类型
         outfile      :    导出创建的蜂窝多边形文件地址，字符串类型
@@ -147,7 +147,7 @@ def Honeycomb_Polygon(vectorfile,outfile,gridwidth,gridheight):
     
     
 # 创建正方形网络
-def Fishgrid(inputfile, outfile, gridwidth, gridheight):
+def Make_Fishgrid(inputfile, outfile, gridwidth, gridheight):
         '''
             inputfile   :    要创建网格的矢量文件，字符串类型
             outfile      :    导出创建的网格文件地址，字符串类型
@@ -229,3 +229,22 @@ def Fishgrid(inputfile, outfile, gridwidth, gridheight):
         pcs_.to_file(outfile, encoding='utf-8')
     
         print("Successfully Create Grid!")
+        
+        
+def make_grid(inputfile,outfile,gridsize,square=True):
+    '''
+        inputfile : 输入要创建网格的矢量数据；string
+        
+        outfile   : 输出创建的网格矢量；string
+        
+        gridsize  : 网格的尺寸；numberic
+        
+        square    : 是否创建正方形格网；True创建正方形，False创建六边形渔网;logical
+    '''
+    if square:
+        Make_Fishgrid(inputfile,outfile,gridwidth=gridsize,gridheight=gridsize)
+    else:
+        Make_Honeycomb_Polygon(inputfile,outfile,gridsize,gridsize)
+    
+
+    

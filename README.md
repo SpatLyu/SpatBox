@@ -2,13 +2,13 @@
 
 ### A Python Library For GeoSpatial Data Proressing and Modeling！
 
-*Now it only consist of few tools, wo will maintain it and add the geospatial-propressing-tools!*
+*Now it only consists of few tools, we will maintain it and add more geospatial-propressing-tools!*
 
 ## How to install spatbox in your own PC?
 
-**Wo recommend to use the conda to install SpatBox**
+**We recommend to use the conda to install SpatBox**
 
-### First, install the anaconda / miniconda in your computer.
+### First, install the anaconda / miniconda in your own computer.
 
 Go to [anaconda](https://www.anaconda.com/) or [miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) to 
 
@@ -20,7 +20,7 @@ Open the "Anaconda Prompt" and input the code `conda create -n spat-env python=3
 
 After that, activate the conda-env you have created, use `conda activate spat-env`, and you will get in the "spat-env" conda-env
 
-Then wo install the mamba package to get a rapid installation:
+Then we install the mamba package to get a rapid installation:
 
 `conda install -c conda-forge mamba` 
 
@@ -44,24 +44,35 @@ Open the `Jupyter Notebook` or `VSCode`, run:
 
 ```python
 import spatbox as stx
-from spatbox.vector import grid
 import geopandas as gpd
 import matplotlib.pyplot as plt  
 
 lp = gpd.read_file(stx.utils.get_path('lp'))
 
-grid.Fishgrid(inputfile = stx.utils.get_path('lp'), 
-              outfile = 'test1',
-              gridheight = 10000,
-              gridwidth = 10000)
+stx.make_grid(inputfile=stx.utils.get_path('lp'),
+              outfile='square',
+              gridsize=10000,
+              square=True)
 
-lp_gw1 = gpd.read_file("test1")
-
-
-fig, ax1 = plt.subplots(1,1, figsize=(12,9))
-lp_gw1.plot(ax=ax1, fc='w', ec='grey') 
-lp.plot(ax=ax1, fc='none', ec='r')
+lp_square = gpd.read_file('square')
+fig, ax = plt.subplots(1,1, figsize=(12,9))
+lp_square.plot(ax=ax, fc='w', ec='grey') 
+lp.plot(ax=ax, fc='none', ec='r')
+plt.savefig('./figure/square.png',dpi=600)
 ```
 
-<center><img src="./output.png"/></center>
+<center><img src="./figure/square.png"/></center>
 
+```python
+stx.make_grid(inputfile=stx.utils.get_path('lp'),
+              outfile='honeycomb',
+              gridsize=10000,
+              square=False)
+
+lp_honeycomb = gpd.read_file('honeycomb')
+fig, ax = plt.subplots(1,1, figsize=(12,9))
+lp_honeycomb.plot(ax=ax, fc='w', ec='grey') 
+lp.plot(ax=ax, fc='none', ec='r')
+plt.savefig('./figure/honeycomb.png',dpi=600)
+```
+<center><img src="./figure/honeycomb.png"/></center>

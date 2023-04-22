@@ -1,7 +1,7 @@
 README.md
 setup.py
 spatbox/__init__.py
-spatbox/corrdinate.py
+spatbox/coordinate.py
 spatbox/geocode.py
 spatbox.egg-info/PKG-INFO
 spatbox.egg-info/SOURCES.txt
@@ -19,8 +19,8 @@ spatbox/analysis/GWR/kernel.py
 spatbox/analysis/GWR/model.py
 spatbox/analysis/GWR/obj.py
 spatbox/analysis/GWR/sel.py
-spatbox/plot/__init__.py
-spatbox/plot/colormaps.py
+spatbox/maptools/__init__.py
+spatbox/maptools/colormaps.py
 spatbox/raster/__init__.py
 spatbox/raster/convert.py
 spatbox/raster/mask.py
